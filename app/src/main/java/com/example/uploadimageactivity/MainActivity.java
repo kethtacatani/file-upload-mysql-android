@@ -52,6 +52,36 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+        /**
+         *
+         *
+         *
+         *
+         *
+         * ====================================================
+        //BEFORE ANYTHING ELSE PLEASE CONFIGURE
+        //HttpService.java and RetroBuilder.java
+
+         // CONFIGURE db_config.php and upload_api.php
+
+
+         ==========================================================
+              ^
+             ***
+            *****
+           *******
+          *********
+         ***********
+            *****
+            *****
+            *****
+
+
+         **/
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -59,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         uploadButton = findViewById(R.id.uploadButton);
         camButton = findViewById(R.id.camButton);
 
-        imageView.setOnClickListener(new View.OnClickListener() {
+        imageView.setOnClickListener(new View.OnClickListener() { //kani siya ang image view ang e click para mo open sa gallery
             @Override
             public void onClick(View v) {
                 Intent galleryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -74,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        camButton.setOnClickListener(new View.OnClickListener() {
+        camButton.setOnClickListener(new View.OnClickListener() { //para mu open sa cam
             @Override
             public void onClick(View v) {
                 Intent takePic = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
