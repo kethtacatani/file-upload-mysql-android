@@ -19,7 +19,7 @@ if(empty($fileName))
 }
 else
 {
-	$upload_path = 'upload/'; // set upload folder path 
+	$upload_path = 'upload/'; //  change this with the folder name where you will store the images. kani ra e configure
 	
 	$fileExt = strtolower(pathinfo($fileName,PATHINFO_EXTENSION)); // get image extension
 		
